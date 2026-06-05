@@ -54,7 +54,7 @@ unless  d.get_multiline_type_metrics(s).width < 420
 end
 d.annotate(i, 0,0,0,165,s ){ |t|
   t.gravity = Magick::WestGravity
-  t.pointsize = 31
+  t.pointsize = 30
   t.font = 'Matrix-Bold.ttf'
   t.fill = 'black'
   t.interline_spacing = 6
