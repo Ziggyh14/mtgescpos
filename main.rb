@@ -18,7 +18,7 @@ d = Magick::Draw.new
 d.annotate(i, 0,0,0,10, card['mana_cost']){ |t|
   t.gravity = Magick::NorthEastGravity
   t.pointsize = 27
-  t.font = '/usr/share/fonts/TTF/Hack-Bold.ttf'
+  t.font = 'Hack-Bold.ttf'
   t.fill = 'black'
   t.font_weight = Magick::BoldWeight
 }
@@ -27,7 +27,7 @@ d.annotate(i, 0,0,0,10, card['mana_cost']){ |t|
 d.annotate(i, 0,0,0,10, card['name']){ |t|
   t.gravity = Magick::NorthWestGravity
   t.pointsize = 34
-  t.font = '/home/ziggy/Projects/escpos/Matrix-Bold.ttf'
+  t.font = 'Matrix-Bold.ttf'
   t.fill = 'black'
   t.font_weight = Magick::BoldWeight
 }
@@ -36,7 +36,7 @@ d.annotate(i, 0,0,0,10, card['name']){ |t|
 d.annotate(i, 0,0,0,25, card['type_line']){ |t|
   t.gravity = Magick::WestGravity
   t.pointsize = 28
-  t.font = '/home/ziggy/Projects/escpos/Matrix-Bold.ttf'
+  t.font = 'Matrix-Bold.ttf'
   t.fill = 'black'
   t.font_weight = Magick::BoldWeight
 }
@@ -55,7 +55,7 @@ end
 d.annotate(i, 0,0,0,165,s ){ |t|
   t.gravity = Magick::WestGravity
   t.pointsize = 31
-  t.font = '/home/ziggy/Projects/escpos/Matrix-Bold.ttf'
+  t.font = 'Matrix-Bold.ttf'
   t.fill = 'black'
   t.interline_spacing = 6
 }
@@ -64,7 +64,7 @@ d.annotate(i, 0,0,0,165,s ){ |t|
 d.annotate(i, 0,0,0,0, "#{card['power']}/#{card['toughness']}"){ |t|
   t.gravity = Magick::SouthEastGravity
   t.pointsize = 35
-  t.font = '/usr/share/fonts/TTF/Hack-Bold.ttf'
+  t.font = 'Hack-Bold.ttf'
   t.fill = 'black'
   t.font_weight = Magick::BoldWeight
 }
